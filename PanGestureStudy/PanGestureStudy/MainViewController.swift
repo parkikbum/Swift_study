@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
         //그래서 여기서 바뀌는 x,y값을 중앙x값 + 바뀐값으로 받아옴
         imageView.center = CGPoint(x: changedX, y:changedY)
         //그 후 이미지 뷰에 적용.
-        panGestureRecognizer.setTranslation(CGPoint.zero, in: imageView)
+      panGestureRecognizer.setTranslation(CGPoint.zero, in: imageView)
         //우선 UIPanGestureRecognizer의 translation은 이 벡터의 원래 위치가 0,0이지만 현재 드래그해서 끌어온 위치의 벡터를 나타냄.
         //그래서 드래그 한 거리를 결정하는데 필요한 것은 이벡터의 또다른 점 뿐임.
         // 여기서 또다른 점은 translation메소드로 얻어온 값을 의미

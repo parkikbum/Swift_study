@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3623FF9E2629952900560617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FF9D2629952900560617 /* AppDelegate.swift */; };
+		3623FFA02629952900560617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FF9F2629952900560617 /* SceneDelegate.swift */; };
+		3623FFA22629952900560617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FFA12629952900560617 /* ViewController.swift */; };
+		3623FFA52629952900560617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3623FFA32629952900560617 /* Main.storyboard */; };
+		3623FFA72629952900560617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3623FFA62629952900560617 /* Assets.xcassets */; };
+		3623FFAA2629952900560617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3623FFA82629952900560617 /* LaunchScreen.storyboard */; };
+		3623FFB52629952900560617 /* ModalAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FFB42629952900560617 /* ModalAnimationTests.swift */; };
+		3623FFC02629952900560617 /* ModalAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FFBF2629952900560617 /* ModalAnimationUITests.swift */; };
+		3623FFD12629954B00560617 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FFD02629954B00560617 /* ModalViewController.swift */; };
+		3623FFD62629958900560617 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623FFD52629958900560617 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3623FFB12629952900560617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3623FF922629952900560617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3623FF992629952900560617;
+			remoteInfo = ModalAnimation;
+		};
+		3623FFBC2629952900560617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3623FF922629952900560617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3623FF992629952900560617;
+			remoteInfo = ModalAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3623FF9A2629952900560617 /* ModalAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623FF9D2629952900560617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3623FF9F2629952900560617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3623FFA12629952900560617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3623FFA42629952900560617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3623FFA62629952900560617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3623FFA92629952900560617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3623FFAB2629952900560617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623FFB02629952900560617 /* ModalAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623FFB42629952900560617 /* ModalAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimationTests.swift; sourceTree = "<group>"; };
+		3623FFB62629952900560617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623FFBB2629952900560617 /* ModalAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623FFBF2629952900560617 /* ModalAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAnimationUITests.swift; sourceTree = "<group>"; };
+		3623FFC12629952900560617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623FFD02629954B00560617 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		3623FFD52629958900560617 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3623FF972629952900560617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFAD2629952900560617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFB82629952900560617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3623FF912629952900560617 = {
+			isa = PBXGroup;
+			children = (
+				3623FF9C2629952900560617 /* ModalAnimation */,
+				3623FFB32629952900560617 /* ModalAnimationTests */,
+				3623FFBE2629952900560617 /* ModalAnimationUITests */,
+				3623FF9B2629952900560617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3623FF9B2629952900560617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3623FF9A2629952900560617 /* ModalAnimation.app */,
+				3623FFB02629952900560617 /* ModalAnimationTests.xctest */,
+				3623FFBB2629952900560617 /* ModalAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3623FF9C2629952900560617 /* ModalAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3623FF9D2629952900560617 /* AppDelegate.swift */,
+				3623FF9F2629952900560617 /* SceneDelegate.swift */,
+				3623FFA12629952900560617 /* ViewController.swift */,
+				3623FFD02629954B00560617 /* ModalViewController.swift */,
+				3623FFA32629952900560617 /* Main.storyboard */,
+				3623FFD52629958900560617 /* MainViewController.swift */,
+				3623FFA62629952900560617 /* Assets.xcassets */,
+				3623FFA82629952900560617 /* LaunchScreen.storyboard */,
+				3623FFAB2629952900560617 /* Info.plist */,
+			);
+			path = ModalAnimation;
+			sourceTree = "<group>";
+		};
+		3623FFB32629952900560617 /* ModalAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				3623FFB42629952900560617 /* ModalAnimationTests.swift */,
+				3623FFB62629952900560617 /* Info.plist */,
+			);
+			path = ModalAnimationTests;
+			sourceTree = "<group>";
+		};
+		3623FFBE2629952900560617 /* ModalAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3623FFBF2629952900560617 /* ModalAnimationUITests.swift */,
+				3623FFC12629952900560617 /* Info.plist */,
+			);
+			path = ModalAnimationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3623FF992629952900560617 /* ModalAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623FFC42629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimation" */;
+			buildPhases = (
+				3623FF962629952900560617 /* Sources */,
+				3623FF972629952900560617 /* Frameworks */,
+				3623FF982629952900560617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalAnimation;
+			productName = ModalAnimation;
+			productReference = 3623FF9A2629952900560617 /* ModalAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3623FFAF2629952900560617 /* ModalAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623FFC72629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimationTests" */;
+			buildPhases = (
+				3623FFAC2629952900560617 /* Sources */,
+				3623FFAD2629952900560617 /* Frameworks */,
+				3623FFAE2629952900560617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3623FFB22629952900560617 /* PBXTargetDependency */,
+			);
+			name = ModalAnimationTests;
+			productName = ModalAnimationTests;
+			productReference = 3623FFB02629952900560617 /* ModalAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3623FFBA2629952900560617 /* ModalAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623FFCA2629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimationUITests" */;
+			buildPhases = (
+				3623FFB72629952900560617 /* Sources */,
+				3623FFB82629952900560617 /* Frameworks */,
+				3623FFB92629952900560617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3623FFBD2629952900560617 /* PBXTargetDependency */,
+			);
+			name = ModalAnimationUITests;
+			productName = ModalAnimationUITests;
+			productReference = 3623FFBB2629952900560617 /* ModalAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3623FF922629952900560617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3623FF992629952900560617 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3623FFAF2629952900560617 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3623FF992629952900560617;
+					};
+					3623FFBA2629952900560617 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3623FF992629952900560617;
+					};
+				};
+			};
+			buildConfigurationList = 3623FF952629952900560617 /* Build configuration list for PBXProject "ModalAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3623FF912629952900560617;
+			productRefGroup = 3623FF9B2629952900560617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3623FF992629952900560617 /* ModalAnimation */,
+				3623FFAF2629952900560617 /* ModalAnimationTests */,
+				3623FFBA2629952900560617 /* ModalAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3623FF982629952900560617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623FFAA2629952900560617 /* LaunchScreen.storyboard in Resources */,
+				3623FFA72629952900560617 /* Assets.xcassets in Resources */,
+				3623FFA52629952900560617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFAE2629952900560617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFB92629952900560617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3623FF962629952900560617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623FFD12629954B00560617 /* ModalViewController.swift in Sources */,
+				3623FFA22629952900560617 /* ViewController.swift in Sources */,
+				3623FF9E2629952900560617 /* AppDelegate.swift in Sources */,
+				3623FFA02629952900560617 /* SceneDelegate.swift in Sources */,
+				3623FFD62629958900560617 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFAC2629952900560617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623FFB52629952900560617 /* ModalAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623FFB72629952900560617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623FFC02629952900560617 /* ModalAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3623FFB22629952900560617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3623FF992629952900560617 /* ModalAnimation */;
+			targetProxy = 3623FFB12629952900560617 /* PBXContainerItemProxy */;
+		};
+		3623FFBD2629952900560617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3623FF992629952900560617 /* ModalAnimation */;
+			targetProxy = 3623FFBC2629952900560617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3623FFA32629952900560617 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3623FFA42629952900560617 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3623FFA82629952900560617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3623FFA92629952900560617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3623FFC22629952900560617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3623FFC32629952900560617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3623FFC52629952900560617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3623FFC62629952900560617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3623FFC82629952900560617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalAnimation.app/ModalAnimation";
+			};
+			name = Debug;
+		};
+		3623FFC92629952900560617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModalAnimation.app/ModalAnimation";
+			};
+			name = Release;
+		};
+		3623FFCB2629952900560617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModalAnimation;
+			};
+			name = Debug;
+		};
+		3623FFCC2629952900560617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U24ZACT97M;
+				INFOPLIST_FILE = ModalAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ikbum.ModalAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModalAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3623FF952629952900560617 /* Build configuration list for PBXProject "ModalAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623FFC22629952900560617 /* Debug */,
+				3623FFC32629952900560617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623FFC42629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623FFC52629952900560617 /* Debug */,
+				3623FFC62629952900560617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623FFC72629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623FFC82629952900560617 /* Debug */,
+				3623FFC92629952900560617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623FFCA2629952900560617 /* Build configuration list for PBXNativeTarget "ModalAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623FFCB2629952900560617 /* Debug */,
+				3623FFCC2629952900560617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3623FF922629952900560617 /* Project object */;
+}
