@@ -92,8 +92,13 @@ extension MainViewController : UICollectionViewDataSource{
         if collectionView.tag == 2{
             guard let mainCell = collectionView.dequeueReusableCell(withReuseIdentifier: MainBannerCollectionViewCell.identifier, for: indexPath) as?
                 MainBannerCollectionViewCell else {return UICollectionViewCell() }
-            mainCell.isDelegate()
-            return mainCell
+            guard let secondCell = collectionView.dequeueReusableCell(withReuseIdentifier: SecondCollectionViewCell.identifier, for: indexPath) as? SecondCollectionViewCell else {return UICollectionViewCell() }
+            if barName[indexPath.row].tabName == "컬리추천"{
+                mainCell.isDelegate()
+                return mainCell
+            }
+            
+            return secondCell
         }
         return UICollectionViewCell()
     }

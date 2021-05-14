@@ -1,33 +1,32 @@
 //
-//  MainTableViewCell.swift
+//  ThisShopTableViewCell.swift
 //  clone_mk
 //
-//  Created by 박익범 on 2021/05/13.
+//  Created by 박익범 on 2021/05/14.
 //
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
-    @IBOutlet weak var bannerCollectionView: UICollectionView!
+class ThisShopTableViewCell: UITableViewCell {
+    @IBOutlet weak var thisShopCollectionView: UICollectionView!
     
-    private var cellImage : [bannerCell] = []
+    static let identifier : String = "ThisShopTableViewCell"
+    
+    
+    private var thisList : [thisShop] = []
     
     func setCellImage(){
-        cellImage.append(contentsOf: [bannerCell(imageName: "imgBanner"),bannerCell(imageName: "imgBanner2")])
+        thisList.append(contentsOf: [thisShop(imageName: "price1", name: "무농약 고추 5종", price: "1,550원", discount: "0%"), thisShop(imageName: "price2", name: "친환경 대추방울 토마토", price: "5,520원", discount: "20%"), thisShop(imageName: "price3", name: "밀가루", price: "3600", discount: "0%")])
+    }
+    
+    func isDelegate(){
+        thisShopCollectionView.delegate = self
+        thisShopCollectionView.dataSource = self
     }
     
     
-    static let identifier : String = "MainTableViewCell"
-    
-    func delegateIn(){
-        bannerCollectionView.delegate = self
-        bannerCollectionView.dataSource = self
-        bannerCollectionView.isPagingEnabled = true
-    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
-
         // Initialization code
     }
 
@@ -38,22 +37,28 @@ class MainTableViewCell: UITableViewCell {
     }
 
 }
-extension MainTableViewCell : UICollectionViewDataSource{
+
+extension ThisShopTableViewCell : UICollectionViewDelegate{
+    
+}
+extension ThisShopTableViewCell : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(cellImage.count,"카운트")
-        return cellImage.count
+        thisList.count
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.identifier, for: indexPath) as? BannerCollectionViewCell else {return UICollectionViewCell() }
-        bannerCell.setImage(imageName: cellImage[indexPath.row].imageName)
+        guard let bannerCell = collectionView.dequeueReusableCell(withReuseIdentifier: ThisShopCollectionViewCell.identifier, for: indexPath) as? ThisShopCollectionViewCell else {return UICollectionViewCell() }
+        bannerCell.setShopdata(name: thisList[indexPath.row].name, discount: thisList[indexPath.row].discount, price: thisList[indexPath.row].price, imageName: thisList[indexPath.row].imageName)
         return bannerCell
     }
+    
+    
 }
-extension MainTableViewCell : UICollectionViewDelegateFlowLayout{
+extension ThisShopTableViewCell : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
-        let cellWidth = width * (375/375)
-        let cellHeight = cellWidth * (340/375)
+        let cellWidth = width * (150/375)
+        let cellHeight = cellWidth * (300/150)
         return CGSize(width: cellWidth, height: cellHeight)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -63,7 +68,6 @@ extension MainTableViewCell : UICollectionViewDelegateFlowLayout{
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 9
     }
-    
 }

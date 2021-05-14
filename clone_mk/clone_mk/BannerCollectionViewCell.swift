@@ -12,6 +12,8 @@ class BannerCollectionViewCell: UICollectionViewCell {
     static let identifier = "BannerCollectionViewCell"
     @IBOutlet weak var bannerImage: UIImageView!
     
+    
+    
     func setImage(imageName : String){
         if let userImage = UIImage(named: imageName){
             bannerImage.image = userImage
