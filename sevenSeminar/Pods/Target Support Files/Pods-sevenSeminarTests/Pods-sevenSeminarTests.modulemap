@@ -1,0 +1,6 @@
+framework module Pods_sevenSeminarTests {
+  umbrella header "Pods-sevenSeminarTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
