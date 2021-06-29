@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MapViewController" customModule="TmapApiStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9X-yQ-6cd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-DY-I0K">
+                                <rect key="frame" x="334" y="752" width="30" height="30"/>
+                                <state key="normal" title="확대"/>
+                                <connections>
+                                    <action selector="zoomButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypQ-M7-QAe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyS-yJ-3Si">
+                                <rect key="frame" x="282" y="752" width="52" height="30"/>
+                                <state key="normal" title="경로탐색"/>
+                                <connections>
+                                    <action selector="routeSearchButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSM-Ei-yiW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-3f-0bC">
+                                <rect key="frame" x="364" y="786" width="30" height="30"/>
+                                <state key="normal" title="축소"/>
+                                <connections>
+                                    <action selector="reduceButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2J-JE-RZI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R9X-yQ-6cd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8fH-yc-tPE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c9a-DY-I0K" secondAttribute="trailing" constant="50" id="DEh-Ti-CwK"/>
+                            <constraint firstItem="R9X-yQ-6cd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ddm-fz-TUm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c9a-DY-I0K" secondAttribute="bottom" constant="80" id="Hwm-jg-Vsw"/>
+                            <constraint firstAttribute="bottom" secondItem="Dc9-3f-0bC" secondAttribute="bottom" constant="80" id="MdT-Ou-JwK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gyS-yJ-3Si" secondAttribute="bottom" constant="80" id="aI5-58-Dz2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R9X-yQ-6cd" secondAttribute="bottom" id="eUD-9b-HrQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R9X-yQ-6cd" secondAttribute="trailing" id="gah-cE-lyg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gyS-yJ-3Si" secondAttribute="trailing" constant="80" id="t8q-wJ-lIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dc9-3f-0bC" secondAttribute="trailing" constant="20" id="xhM-0c-tqP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapStartView" destination="R9X-yQ-6cd" id="c4Q-dO-KDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
